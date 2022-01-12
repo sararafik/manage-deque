@@ -3,6 +3,7 @@ package org.upstream.ManageCollection;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Queue;
 
 import org.junit.jupiter.api.Test;
@@ -22,6 +23,17 @@ public class ArrayDequeTest {
 	   assertEquals(books.remove().getNomBook(), "politique");
 	   assertEquals(books.element().getNomBook(), "cuisine");
 	   
+	}
+	
+	@Test
+	void testWithDeque() {
+		Deque<Book> books = new ArrayDeque<Book>();
+        books.push(new Book(1, "nature"));
+        books.push(new Book(2, "guerre"));
+        books.push(new Book(3, "medecine"));
+        assertEquals(books.peek().getNomBook(), "medecine");   
+        assertEquals(books.pop().getNomBook(), "medecine");
+        assertEquals(books.peek().getNomBook(), "guerre");
 	}
 
 }
