@@ -13,28 +13,9 @@ public class App
        books.add(new Book(1, "politique"));
        books.add(new Book(2, "cuisine"));
        books.add(new Book(3, "culture"));
+       System.out.println(books.element());
        
-       String firstElement = books.element().getNomBook();
-       System.out.println("first element "+firstElement);
-		
-	   String element1 = books.remove().getNomBook();
-	   System.out.println("element1 "+element1);
-		 
-
       
-       String Element = books.element().getNomBook();
-       System.out.println("element "+Element);
-       
-
-       
-       
-       books.add(new Book(4, "motivation"));
-      
-       
-       System.out.println("************elements****************  ");
-       for(Book element : books) {
-    	    System.out.println(element.getNomBook());
-    	}
        
     }
 }

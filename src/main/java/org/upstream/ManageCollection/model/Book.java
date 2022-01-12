@@ -23,6 +23,12 @@ public class Book {
 	public Book() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "Book [identifiantBook=" + identifiantBook + ", nomBook=" + nomBook + "]";
+	}
+	
+	
 	
 	
 

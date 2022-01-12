@@ -10,10 +10,10 @@ import org.upstream.ManageCollection.model.Book;
 
 
 
-public class QueueTest {
+public class ArrayDequeTest {
 	
 	@Test
-	void test() {
+	void testWithQueue() {
 	   Queue<Book> books = new ArrayDeque<Book>();
        books.add(new Book(1, "politique"));
        books.add(new Book(2, "cuisine"));
