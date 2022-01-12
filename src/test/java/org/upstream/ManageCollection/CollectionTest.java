@@ -11,7 +11,7 @@ import org.upstream.ManageCollection.model.Book;
 
 
 
-public class ArrayDequeTest {
+public class CollectionTest {
 	
 	@Test
 	void testWithQueue() {
