@@ -1,6 +1,6 @@
 package org.upstream.ManageCollection.model;
 
-public class Book {
+public class Book implements Comparable<Book>{
 	private int identifiantBook;
 	private String nomBook;
 	public int getIdentifiantBook() {
@@ -27,6 +27,12 @@ public class Book {
 	public String toString() {
 		return "Book [identifiantBook=" + identifiantBook + ", nomBook=" + nomBook + "]";
 	}
+	public int compareTo(Book o) {
+		
+		return this.nomBook.compareTo(o.nomBook);
+		
+	}
+	
 	
 	
 	
