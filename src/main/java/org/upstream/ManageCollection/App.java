@@ -12,19 +12,23 @@ public class App
 {
     public static void main( String[] args )
     {
-    	Queue<Book> books = new PriorityQueue<Book>();
-    	books.add(new Book(1, "politique"));
-        books.add(new Book(2, "cuisine"));
-        books.add(new Book(3, "culture"));
-        for(Book element : books) {
-    	    System.out.println(element);
-    	}
-        System.out.println("first element :"+books.peek());
-        System.out.println("first element a supprimer :"+books.poll());
-        System.out.println("*******elements queue after deleting **********");
-        for(Book element : books) {
-    	    System.out.println(element);
-    	}
+		
+		  Queue<Book> books = new PriorityQueue<Book>(); 
+		  books.add(new Book(1,"politique")); 
+		  books.add(new Book(2, "nature")); 
+		  books.add(new Book(3,"culture"));
+		  for(Book element : books) { 
+			  System.out.println(element); 
+		  }
+		  System.out.println("first element :"+books.peek());
+		  System.out.println("first element a supprimer :"+books.poll());
+		  System.out.println("*******elements queue after deleting **********");
+		  for(Book element : books) { 
+			  System.out.println(element); 
+		  }
+		 
+        
+        
     	
     	
 		
